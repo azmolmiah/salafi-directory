@@ -1,6 +1,6 @@
 # Salafi Directory API
 
-> Backend API for Salafi Directory application, which is a Salafi only source directory website and intended to provide a central point of resource from Salafi organisation's only.
+> Backend API for Salafi Directory application, which is a Salafi source only, directory website and intended to provide a central point of resource from Salafi organisation's only.
 
 - Salafi only resources
 - Scholars infos
@@ -10,7 +10,7 @@
 - Organisation websites
 - Store Locations
 
-#### Intended usage of API externally
+## Intended usage of API externally
 
 > If this API is to be used on a external website, you will need permission for access to API end point's. Also, you will only be able to request information which is publicly available on our website. salafidirectory.co.uk
 
