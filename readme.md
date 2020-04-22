@@ -1,28 +1,31 @@
 # Salafi Directory API
 
-> Backend API for Salafi Directory application, which is a Salafi source only, directory website and intended to provide a central point of resource from Salafi organisation's only.
+> Backend API for Salafi Directory application, which is a Salafi source only, directory website intended to provide a central point of resource from Salafi organisation's only.
 
 - Salafi only resources
 - Scholars infos
-- Student's of Knowledge infos
-- Marakiz Locations
-- Classes platform, time's and locations
+- Student's of knowledge infos
+- Organisation locations
+- Classes or conference platform/time's/locations
 - Organisation websites
-- Store Locations
+- Store locations
+- Hajj/Ummrah organisation details
+- Charity organisation details
+- Browser notifcation's
 
 ## Intended usage of API externally
 
-> If this API is to be used on a external website, you will need permission for access to API end point's. Also, you will only be able to request information which is publicly available on our website. salafidirectory.co.uk
+> If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website. salafidirectory.com
 
-- Publisher: Make account for one markaz each, create, read, update and delete the following...
+- Publisher: Make account for one organisation each, create, read, update and delete the following...
 
-  - One markaz account each
+  - One account each organisation
   - Multiple admin's for management
-  - All data perticular to markaz
+  - All organisation data
 
 - Admin: create, read, update and delete the following...
 
-  - All data perticular to markaz
+  - All data except organisation details
 
 - Version 1.0.0
 - License MIT
@@ -31,69 +34,82 @@
 
 > Create the backend for a Salafi directory website. The frontend/UI can be created by your team . The html/css template has been created and can be used as a reference for functionality.
 
-### Bootcamps
+### Organisation
 
-- List all bootcamps in the database
+- List all organisation in the database
   - Pagination
   - Select specific fields in result
   - Limit number of results
   - Filter by fields
-- Search bootcamps by radius from zipcode
+  - Type: Markaz, store, charity or pilgrimage
+- Search organisation by radius from postcode
   - Use a geocoder to get exact location and coords from a single address field
-- Get single bootcamp
-- Create new bootcamp
+- Get single organisation
+- Create new organisation
   - Authenticated users only
-  - Must have the role "publisher" or "admin"
-  - Only one bootcamp per publisher (admins can create more)
+  - Must have the role "publisher"
+  - Only one account per organisation
   - Field validation via Mongoose
-- Upload a photo for bootcamp
-  - Owner only
+- Upload a photo or logo for organisation
+  - Publisher only
   - Photo will be uploaded to local filesystem
-- Update bootcamps
-  - Owner only
+- Update organisation
+  - Publisher only
   - Validation on update
-- Delete Bootcamp
-  - Owner only
-- Calculate the average cost of all courses for a bootcamp
-- Calculate the average rating from the reviews for a bootcamp
+- Delete organisation
+  - Publisher only
 
-### Courses
+### Duwat's
 
-- List all courses for bootcamp
-- List all courses in general
+- List all duwat's for organisation's
+- List all duwat's in general
   - Pagination, filtering, etc
-- Get single course
-- Create new course
+- Get single duwat
+- Create new duwat
   - Authenticated users only
   - Must have the role "publisher" or "admin"
-  - Only the owner or an admin can create a course for a bootcamp
-  - Publishers can create multiple courses
-- Update course
-  - Owner only
-- Delete course
+  - Only the owner or an admin can create duwat's for a markaz
+- Update duwat's
+  - Publisher or admin
+- Delete class
+  - Publisher or admin
 
-  - Owner only
+### Classes
 
-### Reviews
-
-- List all reviews for a bootcamp
-- List all reviews in general
+- List all classes for organisation's
+- List all classes in general
   - Pagination, filtering, etc
-- Get a single review
-- Create a review
+- Get single class
+- Create new class
   - Authenticated users only
-  - Must have the role "user" or "admin" (no publishers)
-- Update review
-  - Owner only
-- Delete review
-  - Owner only
+  - Must have the role "publisher" or "admin"
+  - Only the owner or an admin can create classes for a markaz
+- Update classes
+  - Publisher or admin
+- Delete class
+  - Publisher or admin
+
+### Lectures
+
+- List all lectures for a organisation's
+- List all lectures in general
+  - Pagination, filtering, etc
+- Get single lecture
+- Create new lecture
+  - Authenticated users only
+  - Must have the role "publisher" or "admin"
+  - Only the owner or an admin can create lectures for a markaz
+- Update lectures
+  - Publisher or admin
+- Delete lecture
+  - Publisher or admin
 
 ### Users & Authentication
 
 - Authentication will be ton using JWT/cookies
   - JWT and cookie should expire in 30 days
 - User registration
-  - Register as a "user" or "publisher"
+  - Register as a "admin" or "publisher"
   - Once registered, a token will be sent along with a cookie (token = xxx)
   - Passwords must be hashed
 - User login
@@ -118,38 +134,18 @@
 
 ## Security
 
-- Encrypt passwords and reset tokens
-- Prevent NoSQL injections
-- Add headers for security (helmet)
-- Prevent cross site scripting - XSS
-- Add a rate limit for requests of 100 requests per 10 minutes
-- Protect against http param polution
-- Use cors to make API public (for now)
+- Encrypted passwords and reset tokens
+- Prevented NoSQL injections
+- Added headers for security (helmet)
+- Prevented cross site scripting - XSS
+- Added rate limit for requests of 100 requests per 10 minutes
+- Protected against http param polution
+- Used cors to make API public (for now)
+- SSL encryption
+- Enabled firewall (ufw) and open needed ports
 
 ## Documentation
 
-- Use Postman to create documentation
-- Use docgen to create HTML files from Postman
-- Add html files as the / route for the api
-
-## Deployment (Digital Ocean)
-
-- Push to Github
-- Create a droplet - https://m.do.co/c/5424d440c63a
-- Clone repo on to server
-- Use PM2 process manager
-- Enable firewall (ufw) and open needed ports
-- Create an NGINX reverse proxy for port 80
-- Connect a domain name
-- Install an SSL using Let's Encrypt
-
-## Code Related Suggestions
-
-- NPM scripts for dev and production env
-- Config file for important constants
-- Use controller methods with documented descriptions/routes
-- Error handling middleware
-- Authentication middleware for protecting routes and setting user roles
-- Validation using Mongoose and no external libraries
-- Use async/await (create middleware to clean up controller methods)
-- Create a database seeder to import and destroy data
+- Postman documentation
+- Docgen HTML files from Postman
+- HTML files as the / route for the api
