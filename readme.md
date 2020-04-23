@@ -5,23 +5,23 @@
 - Salafi only resources
 - Scholars infos
 - Student's of knowledge infos
-- Organisation locations
+- Markaz locations
 - Classes or conference platform/time's/locations
-- Organisation websites
+- Markaz websites
 - Store locations
-- Hajj/Ummrah organisation details
-- Charity organisation details
+- Hajj/Ummrah markaz details
+- Charity marakaz details
 - Browser notifcation's
 
 ## Intended usage of API externally
 
 > If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website. salafidirectory.com
 
-- Publisher: Make account for one organisation each, create, read, update and delete the following...
+- Publisher: Make account for one markaz each, create, read, update and delete the following...
 
-  - One account each organisation
+  - One account each markaz
   - Multiple admin's for management
-  - All organisation data
+  - All markaz data
 
 - Admin: create, read, update and delete the following...
 
@@ -34,34 +34,33 @@
 
 > Create the backend for a Salafi directory website. The frontend/UI can be created by your team . The html/css template has been created and can be used as a reference for functionality.
 
-### Organisation
+### Marakiz
 
-- List all organisation in the database
+- List all markiz in the database
   - Pagination
   - Select specific fields in result
   - Limit number of results
   - Filter by fields
-  - Type: Markaz, store, charity or pilgrimage
-- Search organisation by radius from postcode
+- Search markaz by radius from postcode
   - Use a geocoder to get exact location and coords from a single address field
-- Get single organisation
-- Create new organisation
+- Get single markaz
+- Create new markaz
   - Authenticated users only
   - Must have the role "publisher"
-  - Only one account per organisation
+  - Only one account per markaz
   - Field validation via Mongoose
-- Upload a photo or logo for organisation
+- Upload a photo or logo for markaz
   - Publisher only
   - Photo will be uploaded to local filesystem
-- Update organisation
+- Update markaz
   - Publisher only
   - Validation on update
-- Delete organisation
+- Delete markaz
   - Publisher only
 
 ### Duwat's
 
-- List all duwat's for organisation's
+- List all duwat's for marakiz
 - List all duwat's in general
   - Pagination, filtering, etc
 - Get single duwat
@@ -76,7 +75,7 @@
 
 ### Classes
 
-- List all classes for organisation's
+- List all classes for marakiz
 - List all classes in general
   - Pagination, filtering, etc
 - Get single class
@@ -91,7 +90,7 @@
 
 ### Lectures
 
-- List all lectures for a organisation's
+- List all lectures for a marakiz
 - List all lectures in general
   - Pagination, filtering, etc
 - Get single lecture
