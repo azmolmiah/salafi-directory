@@ -1,0 +1,30 @@
+{
+  "name": "salafi_directory_api",
+  "version": "1.0.0",
+  "description": "Salafi Directory backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production && nodemon server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmolmiah/salafi-directory.git"
+  },
+  "keywords": [
+    "Directory"
+  ],
+  "author": "Azmol Miah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azmolmiah/salafi-directory/issues"
+  },
+  "homepage": "https://github.com/azmolmiah/salafi-directory#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
