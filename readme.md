@@ -3,25 +3,24 @@
 Backend API for Salafi Directory application, which is a Salafi source only, directory website. Intended to provide a central point of resource from Salafi marakiz only.
 
 - Salafi only resources
-- Scholars infos
+- Scholar's infos
 - Student's of knowledge infos
-- Markaz locations
 - Classes or conference platform/time's/locations
-- Markaz websites
-- Store locations
-- Hajj/Ummrah markaz details
-- Charity marakaz details
+- Markaz infos
+- Store infos
+- Hajj/Ummrah organisations infos
+- Charity organisations infos
 - Browser notifcation's
 
 ## Intended usage of API externally
 
 > If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website. salafidirectory.com
 
-- Publisher: Make account for one markaz each, create, read, update and delete the following...
+- Publisher: Make account for one organisation each, create, read, update and delete the following...
 
-  - One account each markaz
+  - One account each organisation
   - Multiple admin's for management
-  - All markaz data
+  - All organisation data
 
 - Admin: create, read, update and delete the following...
 
@@ -32,31 +31,33 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ## API Specifications
 
-> Create the backend for a Salafi directory website. The frontend/UI can be created by your team . The html/css template has been created and can be used as a reference for functionality.
+> Backend specification's below for a Salafi directory API.
 
-### Marakiz
+### Organanisations
 
-- List all markiz in the database
+- List all organisations based on type of organisation in the database
   - Pagination
   - Select specific fields in result
   - Limit number of results
   - Filter by fields
-- Search markaz by radius from postcode
+- Search organisation by radius from postcode
   - Use a geocoder to get exact location and coords from a single address field
-- Get single markaz
-- Create new markaz
+- Get single organisation
+- Create new organisation
   - Authenticated users only
   - Must have the role "publisher"
-  - Only one account per markaz
+  - Only one account per organisation
   - Field validation via Mongoose
-- Upload a photo or logo for markaz
+- Upload a photo or logo for organisation
   - Publisher only
   - Photo will be uploaded to local filesystem
-- Update markaz
+- Update organisation
   - Publisher only
   - Validation on update
-- Delete markaz
+- Delete organisation
   - Publisher only
+
+## Markaz Related API Section
 
 ### Duwat's
 
@@ -75,7 +76,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ### Classes
 
-- List all classes for marakiz
+- List all classes for marakaz
 - List all classes in general
   - Pagination, filtering, etc
 - Get single class
@@ -90,7 +91,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ### Lectures
 
-- List all lectures for a marakiz
+- List all lectures for a marakaz
 - List all lectures in general
   - Pagination, filtering, etc
 - Get single lecture
