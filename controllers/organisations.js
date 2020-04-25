@@ -1,3 +1,5 @@
+const Organisation = require("../models/Organisation");
+
 // @desc    Get all organisations
 // @route   GET /api/v1/organisations
 // @access  Public
@@ -15,8 +17,13 @@ exports.getOrganisation = (req, res, next) => {
 // @desc    Create new organisation
 // @route   POST /api/v1/organisations
 // @access  Private
-exports.createOrganisation = (req, res, next) => {
-  res.status(200).json({ success: true, msg: "Created new organisation" });
+exports.createOrganisation = async (req, res, next) => {
+  const organisation = await Organisation.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    data: organisation,
+  });
 };
 
 // @desc    Update organisation

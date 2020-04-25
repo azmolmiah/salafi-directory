@@ -8,22 +8,18 @@
     "phone": "0161 317 1481",
     "email": "info@salaficentre.co.uk",
     "address": "2 Dudley St, Cheetham Hill, Manchester M8 9DA",
-    "social": [
-      {
-        "twitter": "https://twitter.com/SalafiCentre",
-        "facebook": "https://www.facebook.com/SalafiCentreUK/",
-        "youtube": "https://www.youtube.com/channel/UCBmFsEeXrDr_g92kKCSMaGg",
-        "instagram": "https://www.instagram.com/salaficentre/",
-        "pinterest": "https://www.pinterest.co.uk/pin/92816442290694777",
-        "telegram": "https://t.me/s/salaficentre"
-      }
-    ],
-    "broadcast": [
-      {
-        "mixlr": "http://mixlr.com/sunnahradio/",
-        "soundcloud": "https://soundcloud.com/learnaboutislam/"
-      }
-    ],
+    "social": {
+      "twitter": "https://twitter.com/SalafiCentre",
+      "facebook": "https://www.facebook.com/SalafiCentreUK/",
+      "youtube": "https://www.youtube.com/channel/UCBmFsEeXrDr_g92kKCSMaGg",
+      "instagram": "https://www.instagram.com/salaficentre/",
+      "pinterest": "https://www.pinterest.co.uk/pin/92816442290694777",
+      "telegram": "https://t.me/s/salaficentre"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/sunnahradio/",
+      "soundcloud": "https://soundcloud.com/learnaboutislam/"
+    },
     "type": "markaz"
   },
   {
@@ -35,19 +31,15 @@
     "phone": "01204 658440",
     "email": "alhudabolton@gmail.com",
     "address": "Bella St, Bolton BL3 4DU",
-    "social": [
-      {
-        "twitter": "https://twitter.com/AlhudaBolton",
-        "facebook": "https://www.facebook.com/alhuda.bolton",
-        "youtube": "https://www.youtube.com/channel/UCasRvdqbaLQT4V-q70cAv5Q"
-      }
-    ],
-    "broadcast": [
-      {
-        "mixlr": "https://mixlr.com/alhudabolton/",
-        "soundcloud": "https://soundcloud.com/alhudabolton"
-      }
-    ],
+    "social": {
+      "twitter": "https://twitter.com/AlhudaBolton",
+      "facebook": "https://www.facebook.com/alhuda.bolton",
+      "youtube": "https://www.youtube.com/channel/UCasRvdqbaLQT4V-q70cAv5Q"
+    },
+    "broadcast": {
+      "mixlr": "https://mixlr.com/alhudabolton/",
+      "soundcloud": "https://soundcloud.com/alhudabolton"
+    },
     "type": "markaz"
   },
   {
@@ -59,20 +51,16 @@
     "phone": "07803804140",
     "email": "info@markazbukhari.com/",
     "address": "171 Lodge Ln, Liverpool, L8 0QQ",
-    "social": [
-      {
-        "twitter": "https://twitter.com/MarkazBukhari",
-        "youtube": "https://www.youtube.com/channel/UCBz2ARUai7d0cr2Zo3i3n2A",
-        "instagram": "https://www.instagram.com/markaz.bukhari/",
-        "telegram": "https://t.me/s/MarkazBukhari"
-      }
-    ],
-    "broadcast": [
-      {
-        "mixlr": "https://mixlr.com/markazbukhari/",
-        "soundcloud": "https://soundcloud.com/markazbukhari/"
-      }
-    ],
+    "social": {
+      "twitter": "https://twitter.com/MarkazBukhari",
+      "youtube": "https://www.youtube.com/channel/UCBz2ARUai7d0cr2Zo3i3n2A",
+      "instagram": "https://www.instagram.com/markaz.bukhari/",
+      "telegram": "https://t.me/s/MarkazBukhari"
+    },
+    "broadcast": {
+      "mixlr": "https://mixlr.com/markazbukhari/",
+      "soundcloud": "https://soundcloud.com/markazbukhari/"
+    },
     "type": "markaz"
   },
   {
@@ -84,20 +72,16 @@
     "phone": "07872027878",
     "email": "info@tawheedrochdale.com",
     "address": "8 Castlemere St, Rochdale OL11 3SW",
-    "social": [
-      {
-        "twitter": "https://twitter.com/tawheedrochdale",
-        "facebook": "https://www.facebook.com/tawheed.rochdale",
-        "youtube": "https://www.youtube.com/channel/UCwZBmlpKvi3vWcuYE6eU0sg",
-        "telegram": "https://t.me/s/TawheedRochdale"
-      }
-    ],
-    "broadcast": [
-      {
-        "mixlr": "http://mixlr.com/tawheedrochdale/",
-        "soundcloud": "https://soundcloud.com/tawheedrochdale"
-      }
-    ],
+    "social": {
+      "twitter": "https://twitter.com/tawheedrochdale",
+      "facebook": "https://www.facebook.com/tawheed.rochdale",
+      "youtube": "https://www.youtube.com/channel/UCwZBmlpKvi3vWcuYE6eU0sg",
+      "telegram": "https://t.me/s/TawheedRochdale"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/tawheedrochdale/",
+      "soundcloud": "https://soundcloud.com/tawheedrochdale"
+    },
     "type": "markaz"
   }
 ]
