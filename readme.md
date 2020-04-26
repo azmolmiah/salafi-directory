@@ -57,7 +57,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 - Delete organisation
   - Publisher only
 
-## Markaz Related API Section
+## Markaz Related
 
 ### Duwat's
 
@@ -78,7 +78,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 - List all classes for marakaz
 - List all classes in general
-  - Pagination, filtering, etc
+  - Pagination, filtering, times, timezones etc
 - Get single class
 - Create new class
   - Authenticated users only
@@ -93,7 +93,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 - List all lectures for a marakaz
 - List all lectures in general
-  - Pagination, filtering, etc
+  - Pagination, filtering, times, timezones etc
 - Get single lecture
 - Create new lecture
   - Authenticated users only

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 
 // Regex Validation messages
 const urlValidation = {
@@ -70,7 +71,7 @@ const OrganisationSchema = new mongoose.Schema({
   },
   type: {
     type: String,
-    enum: ["markaz", "school", "pilgrimage", "charity"],
+    enum: ["markaz", "school", "pilgrimage", "charity", "dawa"],
     required: [
       true,
       "Please select a type from:- markaz, school, pilgrimage or charity",
@@ -80,6 +81,12 @@ const OrganisationSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+});
+
+// Create bootcamp slug from the name
+OrganisationSchema.pre("save", function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
 });
 
 module.exports = mongoose.model("Organisation", OrganisationSchema);
