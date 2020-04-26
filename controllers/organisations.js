@@ -3,27 +3,44 @@ const Organisation = require("../models/Organisation");
 // @desc    Get all organisations
 // @route   GET /api/v1/organisations
 // @access  Public
-exports.getOrganisations = (req, res, next) => {
-  res.status(200).json({ success: true, data: {} });
+exports.getOrganisations = async (req, res, next) => {
+  try {
+    const organisations = await Organisation.find();
+    res.status(200).json({ success: true, data: organisations });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
 };
 
 // @desc    Get single organisation
 // @route   GET /api/v1/organisations/:id
 // @access  Public
-exports.getOrganisation = (req, res, next) => {
-  res.status(200).json({ success: true, msg: "Get organisation" });
+exports.getOrganisation = async (req, res, next) => {
+  try {
+    const organisation = await Organisation.findById(req.params.id);
+    if (!organisation) {
+      return res.status(400).json({ success: false });
+    }
+    res.status(200).json({ success: true, data: organisation });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
 };
 
 // @desc    Create new organisation
 // @route   POST /api/v1/organisations
 // @access  Private
 exports.createOrganisation = async (req, res, next) => {
-  const organisation = await Organisation.create(req.body);
+  try {
+    const organisation = await Organisation.create(req.body);
 
-  res.status(201).json({
-    success: true,
-    data: organisation,
-  });
+    res.status(201).json({
+      success: true,
+      data: organisation,
+    });
+  } catch (err) {
+    res.status(500).json({ success: false });
+  }
 };
 
 // @desc    Update organisation
