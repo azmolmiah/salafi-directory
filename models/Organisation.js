@@ -1,5 +1,14 @@
 const mongoose = require("mongoose");
 
+// Regex Validation messages
+const urlValidation = {
+  type: String,
+  match: [
+    /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
+    "Please use a valid URL with HTTP or HTTPS",
+  ],
+};
+
 const OrganisationSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -14,13 +23,7 @@ const OrganisationSchema = new mongoose.Schema({
     required: [true, "Please add description"],
     maxlength: [500, "Description cannot be more than 500 characters."],
   },
-  website: {
-    type: String,
-    match: [
-      /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
-      "Please use a valid URL with HTTP or HTTPS",
-    ],
-  },
+  website: urlValidation,
   phone: {
     type: String,
     maxlength: [20, "Phone number can not be longer than 20 characters"],
@@ -54,22 +57,24 @@ const OrganisationSchema = new mongoose.Schema({
     country: String,
   },
   social: {
-    twitter: { type: String },
-    facebook: { type: String },
-    youtube: { type: String },
-    instagram: { type: String },
-    pinterest: { type: String },
-    telegram: { type: String },
+    twitter: urlValidation,
+    facebook: urlValidation,
+    youtube: urlValidation,
+    instagram: urlValidation,
+    pinterest: urlValidation,
+    telegram: urlValidation,
   },
   broadcast: {
-    mixlr: { type: String },
-    soundcloud: { type: String },
+    mixlr: urlValidation,
+    soundcloud: urlValidation,
   },
   type: {
     type: String,
     enum: ["markaz", "school", "pilgrimage", "charity"],
-    default: "markaz",
-    required: [true, "Please select a type"],
+    required: [
+      true,
+      "Please select a type from:- markaz, school, pilgrimage or charity",
+    ],
   },
   createdAt: {
     type: Date,

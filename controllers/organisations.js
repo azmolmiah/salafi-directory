@@ -26,7 +26,7 @@ exports.getOrganisation = async (req, res, next) => {
     if (!organisation) {
       return next(
         new ErrorResponse(
-          `Organisation not found with the ID: ${req.params.id}`,
+          `Resource not found with the ID: ${req.params.id}`,
           400
         )
       );
@@ -65,7 +65,12 @@ exports.updateOrganisation = async (req, res, next) => {
     );
 
     if (!organisation) {
-      return res.status(400).json({ success: false });
+      return next(
+        new ErrorResponse(
+          `Resource not found with the ID: ${req.params.id}`,
+          400
+        )
+      );
     }
     res.status(200).json({ success: true, data: organisation });
   } catch (err) {
@@ -81,7 +86,12 @@ exports.deleteOrganisation = async (req, res, next) => {
     const organisation = await Organisation.findByIdAndDelete(req.params.id);
 
     if (!organisation) {
-      return res.status(400).json({ success: false });
+      return next(
+        new ErrorResponse(
+          `Resource not found with the ID: ${req.params.id}`,
+          400
+        )
+      );
     }
 
     res.status(200).json({
