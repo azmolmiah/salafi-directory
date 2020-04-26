@@ -1,3 +1,4 @@
+const ErrorResponse = require("../utils/errorResponse");
 const Organisation = require("../models/Organisation");
 
 // @desc    Get all organisations
@@ -6,15 +7,13 @@ const Organisation = require("../models/Organisation");
 exports.getOrganisations = async (req, res, next) => {
   try {
     const organisations = await Organisation.find();
-    res
-      .status(200)
-      .json({
-        success: true,
-        count: organisations.length,
-        data: organisations,
-      });
+    res.status(200).json({
+      success: true,
+      count: organisations.length,
+      data: organisations,
+    });
   } catch (err) {
-    res.status(400).json({ success: false, msg: err.message });
+    next(err);
   }
 };
 
@@ -25,11 +24,16 @@ exports.getOrganisation = async (req, res, next) => {
   try {
     const organisation = await Organisation.findById(req.params.id);
     if (!organisation) {
-      return res.status(400).json({ success: false });
+      return next(
+        new ErrorResponse(
+          `Organisation not found with the ID: ${req.params.id}`,
+          400
+        )
+      );
     }
     res.status(200).json({ success: true, data: organisation });
   } catch (err) {
-    res.status(400).json({ success: false, msg: err.message });
+    next(err);
   }
 };
 
@@ -45,7 +49,7 @@ exports.createOrganisation = async (req, res, next) => {
       data: organisation,
     });
   } catch (err) {
-    res.status(500).json({ success: false, msg: err.message });
+    next(err);
   }
 };
 
@@ -65,7 +69,7 @@ exports.updateOrganisation = async (req, res, next) => {
     }
     res.status(200).json({ success: true, data: organisation });
   } catch (err) {
-    return res.status(400).json({ success: false, msg: err.message });
+    next(err);
   }
 };
 
@@ -86,6 +90,6 @@ exports.deleteOrganisation = async (req, res, next) => {
       msg: `Deleted organisation: ${req.params.id}`,
     });
   } catch (err) {
-    return res.status(400).json({ success: false, msg: err.message });
+    next(err);
   }
 };
