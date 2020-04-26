@@ -6,9 +6,15 @@ const Organisation = require("../models/Organisation");
 exports.getOrganisations = async (req, res, next) => {
   try {
     const organisations = await Organisation.find();
-    res.status(200).json({ success: true, data: organisations });
+    res
+      .status(200)
+      .json({
+        success: true,
+        count: organisations.length,
+        data: organisations,
+      });
   } catch (err) {
-    res.status(400).json({ success: false });
+    res.status(400).json({ success: false, msg: err.message });
   }
 };
 
@@ -23,7 +29,7 @@ exports.getOrganisation = async (req, res, next) => {
     }
     res.status(200).json({ success: true, data: organisation });
   } catch (err) {
-    res.status(400).json({ success: false });
+    res.status(400).json({ success: false, msg: err.message });
   }
 };
 
@@ -39,24 +45,47 @@ exports.createOrganisation = async (req, res, next) => {
       data: organisation,
     });
   } catch (err) {
-    res.status(500).json({ success: false });
+    res.status(500).json({ success: false, msg: err.message });
   }
 };
 
 // @desc    Update organisation
 // @route   PUT /api/v1/organisations/:id
 // @access  Private
-exports.updateOrganisation = (req, res, next) => {
-  res
-    .status(200)
-    .json({ success: true, msg: `Updated organisation: ${req.params.id}` });
+exports.updateOrganisation = async (req, res, next) => {
+  try {
+    const organisation = await Organisation.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true, runValidators: true }
+    );
+
+    if (!organisation) {
+      return res.status(400).json({ success: false });
+    }
+    res.status(200).json({ success: true, data: organisation });
+  } catch (err) {
+    return res.status(400).json({ success: false, msg: err.message });
+  }
 };
 
 // @desc    Delete organisation
 // @route   DELETE /api/v1/organisations/:id
 // @access  Private
-exports.deleteOrganisation = (req, res, next) => {
-  res
-    .status(200)
-    .json({ success: true, msg: `Deleted organisation: ${req.params.id}` });
+exports.deleteOrganisation = async (req, res, next) => {
+  try {
+    const organisation = await Organisation.findByIdAndDelete(req.params.id);
+
+    if (!organisation) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {},
+      msg: `Deleted organisation: ${req.params.id}`,
+    });
+  } catch (err) {
+    return res.status(400).json({ success: false, msg: err.message });
+  }
 };
