@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const slugify = require("slugify");
+const geocoder = require("../utils/geocoder");
 
 // Regex Validation messages
 const urlValidation = {
@@ -11,6 +12,10 @@ const urlValidation = {
 };
 
 const OrganisationSchema = new mongoose.Schema({
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    auto: true,
+  },
   name: {
     type: String,
     required: [true, "Please add a name"],
@@ -51,9 +56,11 @@ const OrganisationSchema = new mongoose.Schema({
       index: "2dsphere",
     },
     formattedAddress: String,
-    street: String,
+    streetNumber: String,
+    streetName: String,
+    neighbourhood: String,
     city: String,
-    state: String,
+    county: String,
     postcode: String,
     country: String,
   },
@@ -68,6 +75,7 @@ const OrganisationSchema = new mongoose.Schema({
   broadcast: {
     mixlr: urlValidation,
     soundcloud: urlValidation,
+    periscope: urlValidation,
   },
   type: {
     type: String,
@@ -86,6 +94,27 @@ const OrganisationSchema = new mongoose.Schema({
 // Create bootcamp slug from the name
 OrganisationSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
+  next();
+});
+
+// Geocode and create location field
+OrganisationSchema.pre("save", async function (next) {
+  const loc = await geocoder.geocode(this.address);
+  this.location = {
+    type: "Point",
+    coordinates: [loc[0].longitude, loc[0].latitude],
+    formattedAddress: loc[0].formattedAddress,
+    streetNumber: loc[0].streetNumber,
+    streetName: loc[0].streetName,
+    neighbourhood: loc[0].extra.neighborhood,
+    city: loc[0].city,
+    county: loc[0].administrativeLevels.level2long,
+    postcode: loc[0].zipcode,
+    country: loc[0].country,
+  };
+
+  this.address = undefined;
+
   next();
 });
 

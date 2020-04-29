@@ -1,13 +1,11 @@
 [
   {
-    "_id": "5d713995b721c3bb38c1f5d0",
-    "user": "5d7a514b5d2c12c7449be045",
     "name": "Salafi Centre of Manchester",
-    "description": "Salafi centre of Manchester, teaching topics around the correct Islamic Beliefs of Ahlus Sunnah and supporting the local community.",
+    "description": "Salafi centre of Manchester, teaching topics around the correct Islamic Beliefs of Ahlus Sunnah.",
     "website": "https://salaficentre.com/",
     "phone": "0161 317 1481",
     "email": "info@salaficentre.co.uk",
-    "address": "2 Dudley St, Cheetham Hill, Manchester M8 9DA",
+    "address": "2 Dudley St, Cheetham Hill, Manchester, M8 9DA",
     "social": {
       "twitter": "https://twitter.com/SalafiCentre",
       "facebook": "https://www.facebook.com/SalafiCentreUK/",
@@ -24,8 +22,6 @@
     "type": "markaz"
   },
   {
-    "_id": "5d713a66ec8f2b88b8f830b8",
-    "user": "5d7a514b5d2c12c7449be046",
     "name": "Alhuda",
     "description": "Alhuda has been open since 2007 as a masjid and learning centre in Bolton, an area of Greater Manchester. Our Dawah is to call to the Qur'an and Sunnah of the prophet Muhammad صلى الله عليه وسلم, upon the understanding of the Salaf (the righteous predecessors of Islam) in order to practice Islam as it originally was. This is the Salafi methodology.",
     "website": "http://alhudabolton.com/",
@@ -48,13 +44,11 @@
     "type": "markaz"
   },
   {
-    "_id": "5d725a037b292f5f8ceff787",
-    "user": "5c8a1d5b0190b214360dc031",
     "name": "Markaz Bukhari",
     "description": "After the great Imām Moḥammad bin Ismā’īl al-Bukhārī (رحمه الله). The Salafī Da’wah began in earnest in January 2011. We initially held fortnightly lessons. which quickly grew to a weekly lesson. The attendance numbers were originally low due to the Da’wah being new to many. The first book we covered was Usūl at Thalātha (3 Principles) and the numbers attending began to grow.",
     "website": "http://markazbukhari.com/",
     "phone": "07803804140",
-    "email": "info@markazbukhari.com",
+    "email": null,
     "address": "171 Lodge Ln, Liverpool, L8 0QQ",
     "social": {
       "twitter": "https://twitter.com/MarkazBukhari",
@@ -72,13 +66,11 @@
     "type": "markaz"
   },
   {
-    "_id": "5d725a1b7b292f5f8ceff788",
-    "user": "5c8a1d5b0190b214360dc032",
     "name": "Tawheed Rochdale",
     "description": "Tawheed Rochdale is an Islamic organisation that calls to the Qur'aan and Sunnah upon the understanding of the Salaf.",
     "website": "https://www.tawheedrochdale.com/",
     "phone": "07872027878",
-    "email": "info@tawheedrochdale.com",
+    "email": null,
     "address": "8 Castlemere St, Rochdale OL11 3SW",
     "social": {
       "twitter": "https://twitter.com/tawheedrochdale",
@@ -96,8 +88,6 @@
     "type": "markaz"
   },
   {
-    "_id": "5d725a1b7b292f5f8cedd789",
-    "user": "5c8a1d5b0190b214360def012",
     "name": "Salafi Dawah Lancs",
     "description": "Calling to the Qur'an & Sunnah upon Methodology of Salaf us-Salih",
     "website": null,
@@ -120,13 +110,11 @@
     "type": "markaz"
   },
   {
-    "_id": "5d7251b8b382f5f8cefd789",
-    "user": "5c8a1d5b0150b254660def043",
     "name": "Albaseerah",
-    "description": "Albaseerah started in the year 2000, stemming from the need to bring authentic Islam to the people of Bradford. The journey to actualise this vision was originally embarked upon by a few like-minded individuals. From the confined spaces of many a humble abode, the small devoted team worked endlessly to create Islamic awareness through arranging lectures, handing out leaflets, spreading knowledge, and establishing dawah stalls. Now, over 16 years later, by the permission of Allah, this vision has inspired the growth of a whole new community.",
+    "description": "Albaseerah started in the year 2000, stemming from the need to bring authentic Islam to the people of Bradford. From the confined spaces of many a humble abode, the small devoted team worked endlessly to create Islamic awareness through arranging lectures, handing out leaflets, spreading knowledge, and establishing dawah stalls. Now, over 16 years later, by the permission of Allah, this vision has inspired the growth of a whole new community.",
     "website": "http://albaseerah.com/",
     "phone": "01274 501736",
-    "email": "info@albaseerah.com",
+    "email": null,
     "address": "3 Paternoster Lane, Bradford, BD7 3DS",
     "social": {
       "twitter": "https://twitter.com/albaseerah",
@@ -139,6 +127,291 @@
     "broadcast": {
       "mixlr": "http://mixlr.com/salafidawalancs/",
       "soundcloud": "https://soundcloud.com/salafidawalancs",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjid al Furqan",
+    "description": "A Masjid located in the heart of Grangetown, calling to Tawheed using strictly nothing but the Qur'an & Sunnah according to the salaf",
+    "website": "https://masjidfurqan.co.uk/",
+    "phone": "01782 823 777",
+    "email": null,
+    "address": "105 Roundwell Street, Tunstall, Stoke on Trent, Staffordshire, ST6 5AW",
+    "social": {
+      "twitter": "https://twitter.com/IslamStoke",
+      "facebook": "https://facebook.com/islamstoke/",
+      "youtube": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/masjidfurqan"
+    },
+    "broadcast": {
+      "mixlr": null,
+      "soundcloud": null,
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjid At-Tawheed",
+    "description": "A Masjid located in the heart of Grangetown, calling to Tawheed using strictly nothing but the Qur'an & Sunnah according to the salaf",
+    "website": null,
+    "phone": "029 2140 9834",
+    "email": null,
+    "address": "171-173 Penarth Rd, Cardiff CF11 6JW",
+    "social": {
+      "twitter": "https://twitter.com/tawheedcardiff",
+      "facebook": "https://www.facebook.com/TawheedCardiff/",
+      "youtube": null,
+      "instagram": "https://www.instagram.com/albaseerah",
+      "pinterest": null,
+      "telegram": null
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/masjid-at-tawheed/",
+      "soundcloud": "https://soundcloud.com/masjid-tawheed",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjidus Sunnah An-Nabawiyah",
+    "description": " The Masjid was opened in the Summer of 2014 and is the result of the efforts of the people of Sunnah locally and across the globe.",
+    "website": "https://www.masjidussunnahaston.uk/",
+    "phone": "0121 523 4761",
+    "email": "info@masjidussunnahaston.uk",
+    "address": "125 Mansfield Road, Birmingham, West Midlands B6 6DA",
+    "social": {
+      "twitter": "https://twitter.com/masjidsunnaAstn",
+      "facebook": null,
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": null
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/masjidsunnah-aston/",
+      "soundcloud": "https://soundcloud.com/masjidassunnahaston",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Wright Street Mosque",
+    "description": " The As-Salafi Mosque, also known as 'The Salafi Mosque' or 'Wright Street', is a Salafist mosque founded in 2002 and located in the Small Heath area of Birmingham, metres from the intersection of Muntz and Wright Streets and just behind Coventry Road. ",
+    "website": "http://www.wrightstreetmosque.com/",
+    "phone": "0121 773 0033",
+    "email": null,
+    "address": "Wright St, Small Heath, Birmingham B10 9SP",
+    "social": {
+      "twitter": "https://twitter.com/SalafiMasjidCom",
+      "facebook": "https://www.facebook.com/pages/Masjid-as-Salafi-Wright-Street/142973169170429",
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": null
+    },
+    "broadcast": {
+      "mixlr": null,
+      "soundcloud": null,
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjid Bin Baz",
+    "description": " After months of striving and being patient, by the Grace and Bounties of our Lord, we have completed the purchase of a former church in East London. We are truly humbled by the support we have received from our Brothers and Sisters, the Salafi Centres and Mosques and our beloved Scholars and Du’āt. ",
+    "website": "https://www.masjidbinbaz.co.uk/",
+    "phone": "0121 773 0033",
+    "email": null,
+    "address": "Masjid Bin Baz, East Road, London, E15 3QR",
+    "social": {
+      "twitter": "https://twitter.com/Athariyyah",
+      "facebook": null,
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": null
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/athariyyah/",
+      "soundcloud": "https://soundcloud.com/masjidbinbazradio",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjid Dar Us Sunnah",
+    "description": "Islamic Centre and Mosque calling to the Correct Understanding of Islam upon the Understanding of the Salaf.",
+    "website": "https://www.masjidbinbaz.co.uk/",
+    "phone": "020 8749 6187",
+    "email": null,
+    "address": "Shepherd's Bush Market, 41 Lime Grove, London W12 8DQ",
+    "social": {
+      "twitter": "https://twitter.com/DaarusSunnah",
+      "facebook": "https://www.facebook.com/DuSunnah",
+      "youtube": "https://www.youtube.com/channel/UCQ9_3Qh6BcqyEloi3LRz5Ig",
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://telegram.me/s/dusunnah"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/masjidussunnah/",
+      "soundcloud": "https://soundcloud.com/darrsunnah",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Salafi Dawah Tooting",
+    "description": "Established in 2013, Salafi Dawah Tooting aims to cultivate the community generally, and the Muslims specifically upon the correct and sound understanding of Islam i.e. The Qur’ān and Sunnah according to the methodology of the Pious Predecessors (Salaf ul- Sāliḥ).",
+    "website": "https://www.salafidawahtooting.com/",
+    "phone": null,
+    "email": null,
+    "address": "Balham Community Centre, 91 bedord Hill, Balham, London, SW12 9HE",
+    "social": {
+      "twitter": "https://twitter.com/tootingsalafiya",
+      "facebook": null,
+      "youtube": "https://www.youtube.com/channel/UCz99ghGiuty-VS99H0oLa4g",
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/tootingsalafiya"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/salafidawahtooting/",
+      "soundcloud": "https://soundcloud.com/salafi-dawah-tooting",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Masjid us-Sunnah",
+    "description": "Established in 2013, Salafi Dawah Tooting aims to cultivate the community generally, and the Muslims specifically upon the correct and sound understanding of Islam i.e. The Qur’ān and Sunnah according to the methodology of the Pious Predecessors (Salaf ul- Sāliḥ).",
+    "website": "http://masjidussunnah.co.uk/",
+    "phone": null,
+    "email": null,
+    "address": "Bath Road, London, TW5 9TN",
+    "social": {
+      "twitter": "https://twitter.com/masjidussunnah",
+      "facebook": null,
+      "youtube": "https://www.youtube.com/user/masjidassunnah",
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/Masjidussunnah1"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/masjidussunnah/",
+      "soundcloud": null,
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Markaz as-Sunnah",
+    "description": "Markaz us-Sunnah was established in 2014 in the area of Wembley, London, with the intention of propagating the true message of Islam – an adherence to the Qur’ān and Sunnah upon the understanding of the Salaf (the Righteous Predecessors)",
+    "website": "https://musunnah.com/",
+    "phone": "020 3302 0450",
+    "email": "admin@musunnah.com",
+    "address": "500 Sunleigh Road, Alperton, London, HA0 4NF",
+    "social": {
+      "twitter": "https://twitter.com/_musunnah",
+      "facebook": "https://en-gb.facebook.com/pages/category/Community/Markaz-Us-Sunnah-197260453996718/",
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/MuSunnah"
+    },
+    "broadcast": {
+      "mixlr": null,
+      "soundcloud": "https://soundcloud.com/musunnah",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Markaz Mu'aadh Bin Jabal",
+    "description": "Markaz us-Sunnah was established in 2014 in the area of Wembley, London, with the intention of propagating the true message of Islam – an adherence to the Qur’ān and Sunnah upon the understanding of the Salaf (the Righteous Predecessors)",
+    "website": "https://musunnah.com/",
+    "phone": "01753 533376",
+    "email": "info@markazmuaadh.com",
+    "address": "19 Spackmans Way, Chalvey, Slough SL1 2SA",
+    "social": {
+      "twitter": "https://twitter.com/markazmuaadh",
+      "facebook": "https://en-gb.facebook.com/pages/category/Community/Markaz-Us-Sunnah-197260453996718/",
+      "youtube": "https://www.youtube.com/user/markazmuaadh",
+      "instagram": null,
+      "pinterest": "https://www.pinterest.co.uk/markazmuaadh/",
+      "telegram": "https://t.me/s/MarkazMuaadh"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/markazmuaadh/",
+      "soundcloud": "https://soundcloud.com/markazmuaadh",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Markaz Salafi",
+    "description": "Salfi markaz upon the Quran and Sunnah of the Salaf",
+    "website": "http://markazsalafi.com/",
+    "phone": "07913 344174",
+    "email": null,
+    "address": "Lydford Rd, Reading RG1 5QH",
+    "social": {
+      "twitter": "https://twitter.com/salafireading",
+      "facebook": null,
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://telegram.me/s/SalafiReading"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/salafireading/",
+      "soundcloud": "https://soundcloud.com/salafireading",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "al Markaz as Salafi Leicestershire",
+    "description": "Est 2013 in order to Call to Tawheed & the Authentic Sunnah of Rasulullah ﷺ upon the understanding of the Sahaba",
+    "website": null,
+    "phone": null,
+    "email": "MarkazAsSalafi@gmail.com",
+    "address": "Moira St, Loughborough LE11 1AU",
+    "social": {
+      "twitter": "https://twitter.com/MarkazSalafi",
+      "facebook": "https://www.facebook.com/MarkazSalafiLeics/",
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/MarkazSalafi"
+    },
+    "broadcast": {
+      "mixlr": "http://mixlr.com/markaz-salafi/",
+      "soundcloud": "https://soundcloud.com/markaz-salafi",
+      "periscope": null
+    },
+    "type": "markaz"
+  },
+  {
+    "name": "Daarut Tawheed",
+    "description": "We are a group of Muslims who wish to spread the Salafi Da'wah by way of Tele-links, Lessons and Lectures. We are aiming to establish a Masjid and Bookstore.",
+    "website": null,
+    "phone": null,
+    "email": null,
+    "address": "Unit 16, 44 Plumstead High Street, SE18 1SL",
+    "social": {
+      "twitter": "https://twitter.com/daaruttawheed",
+      "facebook": null,
+      "youtube": null,
+      "instagram": null,
+      "pinterest": null,
+      "telegram": "https://t.me/s/MarkazSalafi"
+    },
+    "broadcast": {
+      "mixlr": null,
+      "soundcloud": "https://soundcloud.com/Dutawheed",
       "periscope": null
     },
     "type": "markaz"
