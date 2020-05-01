@@ -12,10 +12,10 @@ const urlValidation = {
 };
 
 const OrganisationSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    auto: true,
-  },
+  // user: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   auto: true,
+  // },
   name: {
     type: String,
     required: [true, "Please add a name"],
