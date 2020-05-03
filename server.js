@@ -13,6 +13,7 @@ connectDB();
 
 // Router files
 const organisations = require("./routes/organisations");
+const classes = require("./routes/classes");
 
 const app = express();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === "development") {
 
 // Mount routers
 app.use("/api/v1/organisations", organisations);
+app.use("/api/v1/classes", classes);
 
 // Error handler middleware
 app.use(errorHandler);

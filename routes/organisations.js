@@ -6,7 +6,14 @@ const {
   updateOrganisation,
   deleteOrganisation,
 } = require("../controllers/organisations");
+
+// Include other resource routers
+const classRouter = require("./classes");
+
 const router = express.Router();
+
+// Re-route into other resource routers
+router.use("/:organisationId/classes", classRouter);
 
 router.route("/").get(getOrganisations).post(createOrganisation);
 
