@@ -1,5 +1,6 @@
 const ErrorResponse = require("../utils/errorResponse");
 const Class = require("../models/Class");
+const Organisation = require("../models/Organisation");
 const asyncHandler = require("../middleware/async");
 
 // @desc    Get all classes
@@ -21,5 +22,48 @@ exports.getClasses = asyncHandler(async (req, res, next) => {
     success: true,
     count: classes.length,
     data: classes,
+  });
+});
+
+// @desc    Get single class
+// @route   GET /api/v1/class
+// @route   GET /api/v1/classes/:id
+// @access  Public
+exports.getClass = asyncHandler(async (req, res, next) => {
+  const singleClass = await Class.findById(req.params.id);
+
+  if (!singleClass) {
+    return next(
+      new ErrorResponse(`No class found with id of: ${req.params.id}`)
+    );
+  }
+
+  res.status(200).json({
+    success: true,
+    data: singleClass,
+  });
+});
+
+// @desc    Add class
+// @route   POST /api/v1/organisations/:organisationId/classes
+// @access  Private
+exports.addClass = asyncHandler(async (req, res, next) => {
+  // Add the bootcamp id from params into the body
+  req.body.organisation = req.params.organisationId;
+
+  // Find by Id and check if it exists
+  const organisation = await Organisation.findById(req.params.organisationId);
+
+  if (!organisation) {
+    return next(
+      new ErrorResponse(`No organisation found with id of: ${req.params.id}`)
+    );
+  }
+
+  const singleClass = await Class.create(req.body);
+
+  res.status(200).json({
+    success: true,
+    data: singleClass,
   });
 });

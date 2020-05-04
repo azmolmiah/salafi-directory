@@ -15,7 +15,7 @@ exports.getOrganisations = asyncHandler(async (req, res, next) => {
   // Create query string
   let queryStr = JSON.stringify(reqQuery);
   // Finding resource
-  let query = Organisation.find(JSON.parse(queryStr));
+  let query = Organisation.find(JSON.parse(queryStr)).populate("classes");
 
   //Pagination
   const page = parseInt(req.query.page, 10) || 1;
@@ -99,12 +99,13 @@ exports.updateOrganisation = asyncHandler(async (req, res, next) => {
 // @route   DELETE /api/v1/organisations/:id
 // @access  Private
 exports.deleteOrganisation = asyncHandler(async (req, res, next) => {
-  const organisation = await Organisation.findByIdAndDelete(req.params.id);
+  const organisation = await Organisation.findById(req.params.id);
   if (!organisation) {
     return next(
       new ErrorResponse(`Resource not found with the ID: ${req.params.id}`, 400)
     );
   }
+  organisation.remove();
   res.status(200).json({
     success: true,
     data: {},

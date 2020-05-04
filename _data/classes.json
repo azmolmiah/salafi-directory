@@ -5,8 +5,7 @@
     "duration": "weekly",
     "days": "monday",
     "gender": "men",
-    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)",
-    "organisation": "5eaec72f8f9db41fb4fff456"
+    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)"
   },
   {
     "title": "Mutoon",
@@ -14,8 +13,7 @@
     "duration": "weekly",
     "days": "tuesday",
     "gender": "men",
-    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)",
-    "organisation": "5eaec72f8f9db41fb4fff456"
+    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)"
   },
   {
     "title": "Tajweed",
@@ -23,7 +21,6 @@
     "duration": "weekly",
     "days": "sunday",
     "gender": "men",
-    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)",
-    "organisation": "5eaec72f8f9db41fb4fff456"
+    "setTime": "Sun May 03 2020 12:00:00 GMT+0100 (British Summer Time)"
   }
 ]
