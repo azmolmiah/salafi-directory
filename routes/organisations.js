@@ -5,6 +5,7 @@ const {
   createOrganisation,
   updateOrganisation,
   deleteOrganisation,
+  organisationLogoUpload,
 } = require("../controllers/organisations");
 
 // Include other resource routers
@@ -14,6 +15,8 @@ const router = express.Router();
 
 // Re-route into other resource routers
 router.use("/:organisationId/classes", classRouter);
+
+router.route("/:id/logo").put(organisationLogoUpload);
 
 router.route("/").get(getOrganisations).post(createOrganisation);
 

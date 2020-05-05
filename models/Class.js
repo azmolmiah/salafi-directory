@@ -6,6 +6,7 @@ const ClassSchema = new mongoose.Schema(
       type: String,
       trim: true,
       required: [true, "Please add a class title"],
+      unique: true,
     },
     description: {
       type: String,

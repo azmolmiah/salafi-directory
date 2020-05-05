@@ -75,7 +75,7 @@ const OrganisationSchema = new mongoose.Schema(
     },
     type: {
       type: String,
-      enum: ["markaz", "school", "pilgrimage", "charity", "dawa"],
+      enum: ["markaz", "school", "pilgrimage", "charity", "dawa", "shop"],
       required: [
         true,
         "Please select a type from:- markaz, school, pilgrimage or charity",
@@ -119,7 +119,7 @@ OrganisationSchema.pre("save", async function (next) {
   next();
 });
 
-// Reverse opulate with virtuals
+// Reverse populate with virtuals
 OrganisationSchema.virtual("classes", {
   ref: "Class",
   localField: "_id",
