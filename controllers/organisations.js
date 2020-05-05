@@ -15,7 +15,10 @@ exports.getOrganisations = asyncHandler(async (req, res, next) => {
   // Create query string
   let queryStr = JSON.stringify(reqQuery);
   // Finding resource
-  let query = Organisation.find(JSON.parse(queryStr)).populate("classes");
+  let query = Organisation.find(JSON.parse(queryStr)).populate({
+    path: "classes",
+    select: "title description",
+  });
 
   //Pagination
   const page = parseInt(req.query.page, 10) || 1;

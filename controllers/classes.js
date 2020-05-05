@@ -67,3 +67,46 @@ exports.addClass = asyncHandler(async (req, res, next) => {
     data: singleClass,
   });
 });
+
+// @desc    Update class
+// @route   PUT /api/v1/classes/:id
+// @access  Private
+exports.updateClass = asyncHandler(async (req, res, next) => {
+  // Find by Id and check if it exists
+  const singleClass = await Class.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!singleClass) {
+    return next(
+      new ErrorResponse(`No class found with id of: ${req.params.id}`)
+    );
+  }
+
+  res.status(200).json({
+    success: true,
+    data: singleClass,
+  });
+});
+
+// @desc    Delete class
+// @route   DELETE /api/v1/classes/:id
+// @access  Private
+exports.deleteClass = asyncHandler(async (req, res, next) => {
+  let singleClass = await Class.findById(req.params.id);
+
+  if (!singleClass) {
+    return next(
+      new ErrorResponse(`No class found with id of: ${req.params.id}`)
+    );
+  }
+
+  //Use remove for middleware
+  await Class.remove();
+
+  res.status(200).json({
+    success: true,
+    data: {},
+  });
+});
