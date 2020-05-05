@@ -7,55 +7,7 @@ const asyncHandler = require("../middleware/async");
 // @route   GET /api/v1/organisations
 // @access  Public
 exports.getOrganisations = asyncHandler(async (req, res, next) => {
-  // Copy  query
-  const reqQuery = { ...req.query };
-  //Fields to exclude
-  const removeFields = ["page", "limit"];
-  // Loop over removeFields and delete them from reqQuery
-  removeFields.forEach((param) => delete reqQuery[param]);
-  // Create query string
-  let queryStr = JSON.stringify(reqQuery);
-  // Finding resource
-  let query = Organisation.find(JSON.parse(queryStr)).populate({
-    path: "classes",
-    select: "title description",
-  });
-
-  //Pagination
-  const page = parseInt(req.query.page, 10) || 1;
-  const limit = parseInt(req.query.limit, 10) || 5;
-  const startIndex = (page - 1) * limit;
-  const endIndex = page * limit;
-  const total = await Organisation.countDocuments();
-
-  query = query.skip(startIndex).limit(limit);
-
-  // Executing query
-  const organisations = await query;
-
-  // Pagination result
-  const pagination = {};
-
-  if (endIndex < total) {
-    pagination.next = {
-      page: page + 1,
-      limit,
-    };
-  }
-
-  if (startIndex > 0) {
-    pagination.prev = {
-      page: page - 1,
-      limit,
-    };
-  }
-
-  res.status(200).json({
-    success: true,
-    pagination,
-    count: organisations.length,
-    data: organisations,
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 // @desc    Get single organisation

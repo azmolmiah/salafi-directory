@@ -7,6 +7,8 @@ const {
   deleteOrganisation,
   organisationLogoUpload,
 } = require("../controllers/organisations");
+const Organisation = require("../models/Organisation");
+const advancedResults = require("../middleware/advancedResults");
 
 // Include other resource routers
 const classRouter = require("./classes");
@@ -18,7 +20,10 @@ router.use("/:organisationId/classes", classRouter);
 
 router.route("/:id/logo").put(organisationLogoUpload);
 
-router.route("/").get(getOrganisations).post(createOrganisation);
+router
+  .route("/")
+  .get(advancedResults(Organisation, "classes"), getOrganisations)
+  .post(createOrganisation);
 
 router
   .route("/:id")
