@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config/config.env" });
 
 // Load models
-const Organisation = require("./models/Organisation");
+const Centre = require("./models/Centre");
 const Class = require("./models/Class");
 
 // Connect to database
@@ -18,8 +18,8 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Read JSON files
-const organisations = JSON.parse(
-  fs.readFileSync(`${__dirname}/_data/organisations.json`, "utf-8")
+const centres = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/centres.json`, "utf-8")
 );
 
 // const classes = JSON.parse(
@@ -28,7 +28,7 @@ const organisations = JSON.parse(
 // Import into db
 const importData = async () => {
   try {
-    await Organisation.create(organisations);
+    await Centre.create(centres);
     //await Class.create(classes);
     console.log("Data imported...");
     process.exit();
@@ -40,7 +40,7 @@ const importData = async () => {
 // Delete data
 const deleteData = async () => {
   try {
-    await Organisation.deleteMany();
+    await Centre.deleteMany();
     await Class.deleteMany();
     console.log("Data destroyed...");
     process.exit();

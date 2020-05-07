@@ -1,28 +1,21 @@
 const ErrorResponse = require("../utils/errorResponse");
 const Class = require("../models/Class");
-const Organisation = require("../models/Organisation");
+const Centre = require("../models/Centre");
 const asyncHandler = require("../middleware/async");
 
 // @desc    Get all classes
 // @route   GET /api/v1/classes
-// @route   GET /api/v1/organisations/:organisationId/classes
+// @route   GET /api/v1/centres/:centreId/classes
 // @access  Public
 exports.getClasses = asyncHandler(async (req, res, next) => {
-  let query;
-
-  if (req.params.organisationId) {
-    query = Class.find({ organisation: req.params.organisationId });
+  if (req.params.centreId) {
+    const classes = await Class.find({ centre: req.params.centreId });
+    return res
+      .status(200)
+      .json({ success: true, count: classes.length, data: classes });
   } else {
-    query = Class.find();
+    res.status(200).json(res.advancedResults);
   }
-
-  const classes = await query;
-
-  res.status(200).json({
-    success: true,
-    count: classes.length,
-    data: classes,
-  });
 });
 
 // @desc    Get single class
@@ -45,18 +38,18 @@ exports.getClass = asyncHandler(async (req, res, next) => {
 });
 
 // @desc    Add class
-// @route   POST /api/v1/organisations/:organisationId/classes
+// @route   POST /api/v1/centres/:centreId/classes
 // @access  Private
 exports.addClass = asyncHandler(async (req, res, next) => {
   // Add the bootcamp id from params into the body
-  req.body.organisation = req.params.organisationId;
+  req.body.centre = req.params.centreId;
 
   // Find by Id and check if it exists
-  const organisation = await Organisation.findById(req.params.organisationId);
+  const centre = await Centre.findById(req.params.centreId);
 
-  if (!organisation) {
+  if (!centre) {
     return next(
-      new ErrorResponse(`No organisation found with id of: ${req.params.id}`)
+      new ErrorResponse(`No centre found with id of: ${req.params.id}`)
     );
   }
 

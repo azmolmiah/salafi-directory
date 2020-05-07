@@ -19,8 +19,7 @@
       "mixlr": "http://mixlr.com/sunnahradio/",
       "soundcloud": "https://soundcloud.com/learnaboutislam/",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Alhuda",
@@ -42,8 +41,7 @@
       "mixlr": "https://mixlr.com/alhudabolton/",
       "soundcloud": "https://soundcloud.com/alhudabolton",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Markaz Bukhari",
@@ -65,8 +63,7 @@
       "mixlr": "https://mixlr.com/markazbukhari/",
       "soundcloud": "https://soundcloud.com/markazbukhari/",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Tawheed Rochdale",
@@ -88,8 +85,7 @@
       "mixlr": "http://mixlr.com/tawheedrochdale/",
       "soundcloud": "https://soundcloud.com/tawheedrochdale",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Salafi Dawah Lancs",
@@ -111,8 +107,7 @@
       "mixlr": "http://mixlr.com/salafidawalancs/",
       "soundcloud": "https://soundcloud.com/salafidawalancs",
       "periscope": "https://www.pscp.tv/SalafiDawaLancs"
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Albaseerah",
@@ -134,8 +129,7 @@
       "mixlr": "http://mixlr.com/salafidawalancs/",
       "soundcloud": "https://soundcloud.com/salafidawalancs",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjid al Furqan",
@@ -156,8 +150,7 @@
       "mixlr": null,
       "soundcloud": null,
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjid At-Tawheed",
@@ -179,8 +172,7 @@
       "mixlr": "http://mixlr.com/masjid-at-tawheed/",
       "soundcloud": "https://soundcloud.com/masjid-tawheed",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjidus Sunnah An-Nabawiyah",
@@ -202,8 +194,7 @@
       "mixlr": "http://mixlr.com/masjidsunnah-aston/",
       "soundcloud": "https://soundcloud.com/masjidassunnahaston",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Wright Street Mosque",
@@ -225,8 +216,7 @@
       "mixlr": null,
       "soundcloud": null,
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjid Bin Baz",
@@ -248,8 +238,7 @@
       "mixlr": "http://mixlr.com/athariyyah/",
       "soundcloud": "https://soundcloud.com/masjidbinbazradio",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjid Dar Us Sunnah",
@@ -271,8 +260,7 @@
       "mixlr": "http://mixlr.com/masjidussunnah/",
       "soundcloud": "https://soundcloud.com/darrsunnah",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Salafi Dawah Tooting",
@@ -294,8 +282,7 @@
       "mixlr": "http://mixlr.com/salafidawahtooting/",
       "soundcloud": "https://soundcloud.com/salafi-dawah-tooting",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Masjid us-Sunnah",
@@ -317,8 +304,7 @@
       "mixlr": "http://mixlr.com/masjidussunnah/",
       "soundcloud": null,
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Markaz as-Sunnah",
@@ -340,8 +326,7 @@
       "mixlr": null,
       "soundcloud": "https://soundcloud.com/musunnah",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Markaz Mu'aadh Bin Jabal",
@@ -363,8 +348,7 @@
       "mixlr": "http://mixlr.com/markazmuaadh/",
       "soundcloud": "https://soundcloud.com/markazmuaadh",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Markaz Salafi",
@@ -386,8 +370,7 @@
       "mixlr": "http://mixlr.com/salafireading/",
       "soundcloud": "https://soundcloud.com/salafireading",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "al Markaz as Salafi Leicestershire",
@@ -409,8 +392,7 @@
       "mixlr": "http://mixlr.com/markaz-salafi/",
       "soundcloud": "https://soundcloud.com/markaz-salafi",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   },
   {
     "name": "Daarut Tawheed",
@@ -432,7 +414,6 @@
       "mixlr": null,
       "soundcloud": "https://soundcloud.com/Dutawheed",
       "periscope": null
-    },
-    "type": "markaz"
+    }
   }
 ]

@@ -14,30 +14,25 @@ const ClassSchema = new mongoose.Schema(
     },
     duration: {
       type: String,
-      enum: ["daily", "weekly"],
+      enum: ["Daily", "Weekly"],
       required: [true, "Please add a duration"],
     },
     days: {
       type: String,
-      enum: [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday",
-        "sunday",
-      ],
-      required: [true, "Please add a day"],
+      enum: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      required: [true, "Please add day(s)"],
     },
-    setTime: Date,
+    setTime: {
+      type: Date,
+      required: [true, "Please set a time for the class"],
+    },
     gender: {
       type: String,
-      enum: ["men", "women", "children"],
+      enum: ["Men", "Women", "Children"],
     },
-    organisation: {
+    centre: {
       type: mongoose.Schema.ObjectId,
-      ref: "Organisation",
+      ref: "Centre",
       require: true,
     },
   },
