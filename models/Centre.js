@@ -73,6 +73,11 @@ const CentreSchema = new mongoose.Schema(
       soundcloud: urlValidation,
       periscope: urlValidation,
     },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
+      require: true,
+    },
   },
   {
     id: false,

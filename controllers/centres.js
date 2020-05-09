@@ -27,7 +27,24 @@ exports.getCentre = asyncHandler(async (req, res, next) => {
 // @route   POST /api/v1/centres
 // @access  Private
 exports.createCentre = asyncHandler(async (req, res, next) => {
+  // Add user to req.body
+  req.body.user = req.user.id;
+
+  // Check for published centre
+  const publishedCentre = await Centre.findOne({ user: req.user.id });
+
+  // Only one centre per publisher
+  if (publishedCentre) {
+    return next(
+      new ErrorResponse(
+        `Publisher: ${req.user.id} has already created a centre`,
+        400
+      )
+    );
+  }
+
   const centre = await Centre.create(req.body);
+
   res.status(201).json({
     success: true,
     data: centre,
