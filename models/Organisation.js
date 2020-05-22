@@ -11,7 +11,7 @@ const urlValidation = {
   ],
 };
 
-const CentreSchema = new mongoose.Schema(
+const OrganisationSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -23,7 +23,6 @@ const CentreSchema = new mongoose.Schema(
     slug: String,
     description: {
       type: String,
-      required: [true, "Please add description"],
       maxlength: [500, "Description cannot be more than 500 characters."],
     },
     website: urlValidation,
@@ -73,10 +72,14 @@ const CentreSchema = new mongoose.Schema(
       soundcloud: urlValidation,
       periscope: urlValidation,
     },
+    type: {
+      type: String,
+      enum: ["centre", "school", "store", "charity", "pilgrimage"],
+      required: [true, "Please, select a type of organisation"],
+    },
     user: {
       type: mongoose.Schema.ObjectId,
       ref: "User",
-      require: true,
     },
   },
   {
@@ -88,13 +91,13 @@ const CentreSchema = new mongoose.Schema(
 );
 
 // Create centre slug from the name
-CentreSchema.pre("save", function (next) {
+OrganisationSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();
 });
 
 // Geocode and create location field
-CentreSchema.pre("save", async function (next) {
+OrganisationSchema.pre("save", async function (next) {
   const loc = await geocoder.geocode(this.address);
   this.location = {
     type: "Point",
@@ -114,17 +117,17 @@ CentreSchema.pre("save", async function (next) {
 });
 
 // Reverse populate with virtuals
-CentreSchema.virtual("classes", {
+OrganisationSchema.virtual("classes", {
   ref: "Class",
   localField: "_id",
-  foreignField: "centre",
+  foreignField: "organisation",
   justOne: false,
 });
 
-// Cascade delete classes when a centre is deleted
-CentreSchema.pre("remove", async function (next) {
+// Cascade delete classes when a organisation is deleted
+OrganisationSchema.pre("remove", async function (next) {
   await this.model("Class").deleteMany({ centre: this._id });
   next();
 });
 
-module.exports = mongoose.model("Centre", CentreSchema);
+module.exports = mongoose.model("Organisation", OrganisationSchema);

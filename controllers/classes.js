@@ -1,15 +1,17 @@
 const ErrorResponse = require("../utils/errorResponse");
 const Class = require("../models/Class");
-const Centre = require("../models/Centre");
+const Organisation = require("../models/Organisation");
 const asyncHandler = require("../middleware/async");
 
 // @desc    Get all classes
 // @route   GET /api/v1/classes
-// @route   GET /api/v1/centres/:centreId/classes
+// @route   GET /api/v1/organisations/:organisationId/classes
 // @access  Public
 exports.getClasses = asyncHandler(async (req, res, next) => {
-  if (req.params.centreId) {
-    const classes = await Class.find({ centre: req.params.centreId });
+  if (req.params.organisationId) {
+    const classes = await Class.find({
+      organisation: req.params.organisationId,
+    });
     return res
       .status(200)
       .json({ success: true, count: classes.length, data: classes });
@@ -38,18 +40,31 @@ exports.getClass = asyncHandler(async (req, res, next) => {
 });
 
 // @desc    Add class
-// @route   POST /api/v1/centres/:centreId/classes
+// @route   POST /api/v1/organisations/:organisationId/classes
 // @access  Private
-exports.addClass = asyncHandler(async (req, res, next) => {
+exports.createClass = asyncHandler(async (req, res, next) => {
   // Add the bootcamp id from params into the body
-  req.body.centre = req.params.centreId;
+  req.body.organisation = req.params.organisationId;
+  req.body.user = req.user.id;
 
   // Find by Id and check if it exists
-  const centre = await Centre.findById(req.params.centreId);
+  const organisation = await Organisation.findById(req.params.organisationId);
 
-  if (!centre) {
+  if (!organisation) {
     return next(
-      new ErrorResponse(`No centre found with id of: ${req.params.id}`)
+      new ErrorResponse(
+        `No organisation found with the id of: ${req.params.id}`
+      )
+    );
+  }
+
+  // Make sure publisher / admin is organisation owner
+  if (organisation.user.toString() !== req.user.id) {
+    return next(
+      new ErrorResponse(
+        `Publisher ${req.user.id} is not authorised to create class`,
+        401
+      )
     );
   }
 
@@ -73,6 +88,16 @@ exports.updateClass = asyncHandler(async (req, res, next) => {
     );
   }
 
+  // Make sure publisher / admin is class owner
+  if (singleClass.user.toString() !== req.user.id) {
+    return next(
+      new ErrorResponse(
+        `Publisher ${req.user.id} is not authorised to update class ${req.params.id}`,
+        401
+      )
+    );
+  }
+
   singleClass = await Class.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true,
@@ -93,6 +118,16 @@ exports.deleteClass = asyncHandler(async (req, res, next) => {
   if (!singleClass) {
     return next(
       new ErrorResponse(`No class found with id of: ${req.params.id}`)
+    );
+  }
+
+  // Make sure publisher / admin is class owner
+  if (singleClass.user.toString() !== req.user.id) {
+    return next(
+      new ErrorResponse(
+        `Publisher ${req.user.id} is not authorised to delete class ${req.params.id}`,
+        401
+      )
     );
   }
 

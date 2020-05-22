@@ -30,9 +30,14 @@ const ClassSchema = new mongoose.Schema(
       type: String,
       enum: ["Men", "Women", "Children"],
     },
-    centre: {
+    organisation: {
       type: mongoose.Schema.ObjectId,
-      ref: "Centre",
+      ref: "Organisation",
+      require: true,
+    },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
       require: true,
     },
   },

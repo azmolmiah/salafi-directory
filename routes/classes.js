@@ -2,7 +2,7 @@ const express = require("express");
 const {
   getClasses,
   getClass,
-  addClass,
+  createClass,
   updateClass,
   deleteClass,
 } = require("../controllers/classes");
@@ -17,10 +17,13 @@ const { protect } = require("../middleware/auth");
 router
   .route("/")
   .get(
-    advancedResults(Class, { path: "centre", select: "name description" }),
+    advancedResults(Class, {
+      path: "organisation",
+      select: "name description",
+    }),
     getClasses
   )
-  .post(protect, addClass);
+  .post(protect, createClass);
 
 router
   .route("/:id")

@@ -17,9 +17,9 @@
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/sunnahradio/",
-      "soundcloud": "https://soundcloud.com/learnaboutislam/",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/learnaboutislam/"
+    },
+    "type": "centre"
   },
   {
     "name": "Alhuda",
@@ -32,16 +32,14 @@
     "social": {
       "twitter": "https://twitter.com/AlhudaBolton",
       "facebook": "https://www.facebook.com/alhuda.bolton",
-      "youtube": "https://www.youtube.com/channel/UCasRvdqbaLQT4V-q70cAv5Q",
-      "instagram": null,
-      "pinterest": null,
-      "telegram": null
+      "youtube": "https://www.youtube.com/channel/UCasRvdqbaLQT4V-q70cAv5Q"
     },
     "broadcast": {
       "mixlr": "https://mixlr.com/alhudabolton/",
       "soundcloud": "https://soundcloud.com/alhudabolton",
       "periscope": null
-    }
+    },
+    "type": "centre"
   },
   {
     "name": "Markaz Bukhari",
@@ -53,17 +51,15 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/MarkazBukhari",
-      "facebook": null,
       "youtube": "https://www.youtube.com/channel/UCBz2ARUai7d0cr2Zo3i3n2A",
       "instagram": "https://www.instagram.com/markaz.bukhari/",
-      "pinterest": null,
       "telegram": "https://t.me/s/MarkazBukhari"
     },
     "broadcast": {
       "mixlr": "https://mixlr.com/markazbukhari/",
-      "soundcloud": "https://soundcloud.com/markazbukhari/",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/markazbukhari/"
+    },
+    "type": "centre"
   },
   {
     "name": "Tawheed Rochdale",
@@ -77,15 +73,13 @@
       "twitter": "https://twitter.com/tawheedrochdale",
       "facebook": "https://www.facebook.com/tawheed.rochdale",
       "youtube": "https://www.youtube.com/channel/UCwZBmlpKvi3vWcuYE6eU0sg",
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/TawheedRochdale"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/tawheedrochdale/",
-      "soundcloud": "https://soundcloud.com/tawheedrochdale",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/tawheedrochdale"
+    },
+    "type": "centre"
   },
   {
     "name": "Salafi Dawah Lancs",
@@ -97,17 +91,15 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/SalafiDawaLancs",
-      "facebook": null,
       "youtube": "https://www.youtube.com/user/SalafiDawaLancs",
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/SalafiDawaLancs"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/salafidawalancs/",
       "soundcloud": "https://soundcloud.com/salafidawalancs",
       "periscope": "https://www.pscp.tv/SalafiDawaLancs"
-    }
+    },
+    "type": "centre"
   },
   {
     "name": "Albaseerah",
@@ -120,16 +112,13 @@
     "social": {
       "twitter": "https://twitter.com/albaseerah",
       "facebook": "https://www.facebook.com/albaseerah/",
-      "youtube": null,
-      "instagram": "https://www.instagram.com/albaseerah",
-      "pinterest": null,
-      "telegram": null
+      "instagram": "https://www.instagram.com/albaseerah"
     },
     "broadcast": {
-      "mixlr": "http://mixlr.com/salafidawalancs/",
-      "soundcloud": "https://soundcloud.com/salafidawalancs",
-      "periscope": null
-    }
+      "mixlr": "https://mixlr.com/albaseerah/",
+      "soundcloud": "https://soundcloud.com/albaseerah"
+    },
+    "type": "centre"
   },
   {
     "name": "Masjid al Furqan",
@@ -142,15 +131,10 @@
     "social": {
       "twitter": "https://twitter.com/IslamStoke",
       "facebook": "https://facebook.com/islamstoke/",
-      "youtube": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/masjidfurqan"
     },
-    "broadcast": {
-      "mixlr": null,
-      "soundcloud": null,
-      "periscope": null
-    }
+    "broadcast": {},
+    "type": "centre"
   },
   {
     "name": "Masjid At-Tawheed",
@@ -162,17 +146,13 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/tawheedcardiff",
-      "facebook": "https://www.facebook.com/TawheedCardiff/",
-      "youtube": null,
-      "instagram": "https://www.instagram.com/albaseerah",
-      "pinterest": null,
-      "telegram": null
+      "facebook": "https://www.facebook.com/TawheedCardiff/"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/masjid-at-tawheed/",
-      "soundcloud": "https://soundcloud.com/masjid-tawheed",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/masjid-tawheed"
+    },
+    "type": "centre"
   },
   {
     "name": "Masjidus Sunnah An-Nabawiyah",
@@ -183,18 +163,13 @@
     "address": "125 Mansfield Road, Birmingham, West Midlands B6 6DA",
     "country": "United Kingdom",
     "social": {
-      "twitter": "https://twitter.com/masjidsunnaAstn",
-      "facebook": null,
-      "youtube": null,
-      "instagram": null,
-      "pinterest": null,
-      "telegram": null
+      "twitter": "https://twitter.com/masjidsunnaAstn"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/masjidsunnah-aston/",
-      "soundcloud": "https://soundcloud.com/masjidassunnahaston",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/masjidassunnahaston"
+    },
+    "type": "centre"
   },
   {
     "name": "Wright Street Mosque",
@@ -206,17 +181,10 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/SalafiMasjidCom",
-      "facebook": "https://www.facebook.com/pages/Masjid-as-Salafi-Wright-Street/142973169170429",
-      "youtube": null,
-      "instagram": null,
-      "pinterest": null,
-      "telegram": null
+      "facebook": "https://www.facebook.com/pages/Masjid-as-Salafi-Wright-Street/142973169170429"
     },
-    "broadcast": {
-      "mixlr": null,
-      "soundcloud": null,
-      "periscope": null
-    }
+    "broadcast": {},
+    "type": "centre"
   },
   {
     "name": "Masjid Bin Baz",
@@ -227,18 +195,13 @@
     "address": "Masjid Bin Baz, East Road, London, E15 3QR",
     "country": "United Kingdom",
     "social": {
-      "twitter": "https://twitter.com/Athariyyah",
-      "facebook": null,
-      "youtube": null,
-      "instagram": null,
-      "pinterest": null,
-      "telegram": null
+      "twitter": "https://twitter.com/Athariyyah"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/athariyyah/",
-      "soundcloud": "https://soundcloud.com/masjidbinbazradio",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/masjidbinbazradio"
+    },
+    "type": "centre"
   },
   {
     "name": "Masjid Dar Us Sunnah",
@@ -252,15 +215,13 @@
       "twitter": "https://twitter.com/DaarusSunnah",
       "facebook": "https://www.facebook.com/DuSunnah",
       "youtube": "https://www.youtube.com/channel/UCQ9_3Qh6BcqyEloi3LRz5Ig",
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://telegram.me/s/dusunnah"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/masjidussunnah/",
-      "soundcloud": "https://soundcloud.com/darrsunnah",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/darrsunnah"
+    },
+    "type": "centre"
   },
   {
     "name": "Salafi Dawah Tooting",
@@ -272,21 +233,18 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/tootingsalafiya",
-      "facebook": null,
       "youtube": "https://www.youtube.com/channel/UCz99ghGiuty-VS99H0oLa4g",
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/tootingsalafiya"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/salafidawahtooting/",
-      "soundcloud": "https://soundcloud.com/salafi-dawah-tooting",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/salafi-dawah-tooting"
+    },
+    "type": "centre"
   },
   {
     "name": "Masjid us-Sunnah",
-    "description": "Established in 2013, Salafi Dawah Tooting aims to cultivate the community generally, and the Muslims specifically upon the correct and sound understanding of Islam i.e. The Qur’ān and Sunnah according to the methodology of the Pious Predecessors (Salaf ul- Sāliḥ).",
+    "description": null,
     "website": "http://masjidussunnah.co.uk/",
     "phone": null,
     "email": null,
@@ -294,17 +252,13 @@
     "country": "United Kingdom",
     "social": {
       "twitter": "https://twitter.com/masjidussunnah",
-      "facebook": null,
       "youtube": "https://www.youtube.com/user/masjidassunnah",
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/Masjidussunnah1"
     },
     "broadcast": {
-      "mixlr": "http://mixlr.com/masjidussunnah/",
-      "soundcloud": null,
-      "periscope": null
-    }
+      "mixlr": "http://mixlr.com/masjidussunnah/"
+    },
+    "type": "centre"
   },
   {
     "name": "Markaz as-Sunnah",
@@ -317,21 +271,18 @@
     "social": {
       "twitter": "https://twitter.com/_musunnah",
       "facebook": "https://en-gb.facebook.com/pages/category/Community/Markaz-Us-Sunnah-197260453996718/",
-      "youtube": null,
-      "instagram": null,
-      "pinterest": null,
       "telegram": "https://t.me/s/MuSunnah"
     },
     "broadcast": {
       "mixlr": null,
-      "soundcloud": "https://soundcloud.com/musunnah",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/musunnah"
+    },
+    "type": "centre"
   },
   {
     "name": "Markaz Mu'aadh Bin Jabal",
     "description": "Markaz us-Sunnah was established in 2014 in the area of Wembley, London, with the intention of propagating the true message of Islam – an adherence to the Qur’ān and Sunnah upon the understanding of the Salaf (the Righteous Predecessors)",
-    "website": "https://musunnah.com/",
+    "website": "https://markazmuaadh.com/",
     "phone": "01753 533376",
     "email": "info@markazmuaadh.com",
     "address": "19 Spackmans Way, Chalvey, Slough SL1 2SA",
@@ -340,15 +291,14 @@
       "twitter": "https://twitter.com/markazmuaadh",
       "facebook": "https://en-gb.facebook.com/pages/category/Community/Markaz-Us-Sunnah-197260453996718/",
       "youtube": "https://www.youtube.com/user/markazmuaadh",
-      "instagram": null,
       "pinterest": "https://www.pinterest.co.uk/markazmuaadh/",
       "telegram": "https://t.me/s/MarkazMuaadh"
     },
     "broadcast": {
       "mixlr": "http://mixlr.com/markazmuaadh/",
-      "soundcloud": "https://soundcloud.com/markazmuaadh",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/markazmuaadh"
+    },
+    "type": "centre"
   },
   {
     "name": "Markaz Salafi",
@@ -370,7 +320,8 @@
       "mixlr": "http://mixlr.com/salafireading/",
       "soundcloud": "https://soundcloud.com/salafireading",
       "periscope": null
-    }
+    },
+    "type": "centre"
   },
   {
     "name": "al Markaz as Salafi Leicestershire",
@@ -392,7 +343,8 @@
       "mixlr": "http://mixlr.com/markaz-salafi/",
       "soundcloud": "https://soundcloud.com/markaz-salafi",
       "periscope": null
-    }
+    },
+    "type": "centre"
   },
   {
     "name": "Daarut Tawheed",
@@ -403,17 +355,49 @@
     "address": "Unit 16, 44 Plumstead High Street, SE18 1SL",
     "country": "United Kingdom",
     "social": {
-      "twitter": "https://twitter.com/daaruttawheed",
-      "facebook": null,
-      "youtube": null,
-      "instagram": null,
-      "pinterest": null,
-      "telegram": "https://t.me/s/MarkazSalafi"
+      "twitter": "https://twitter.com/daaruttawheed"
     },
     "broadcast": {
-      "mixlr": null,
-      "soundcloud": "https://soundcloud.com/Dutawheed",
-      "periscope": null
-    }
+      "soundcloud": "https://soundcloud.com/Dutawheed"
+    },
+    "type": "centre"
+  },
+  {
+    "name": "The Salafi Bookstore Bradford",
+    "description": "Walhamdulillah, established since 2004, the SalafiBookstore in Bradford is the only place in Bradford that stocks and distributes materials adhering strictly to the Quran and Sunnah. In November 2012 we relocated to a new location on Great Horton road, Bradford 7. The idea was to have the bookshop and Masjid in one location. All praise be to Allah we were able to achieve this.",
+    "website": "http://albaseerah.com/bookstore/",
+    "phone": "01274 501 736",
+    "email": null,
+    "address": "459-461 Great Horton Road, Bradford, BD7 3DJ",
+    "country": "United Kingdom",
+    "social": {},
+    "type": "store"
+  },
+  {
+    "name": "Salafi Bookstore & Islamic Centre",
+    "description": "Description required.",
+    "website": "https://salafibookstore.com/",
+    "phone": "0121 773 0033",
+    "email": null,
+    "address": "472 Coventry Rd, Small Heath, Birmingham B10 0UG",
+    "country": "United Kingdom",
+    "social": {
+      "twitter": "https://twitter.com/salafibookstore",
+      "facebook": "https://www.facebook.com/salafibookstore"
+    },
+    "type": "store"
+  },
+  {
+    "name": "Inkpot Salafi Bookshop",
+    "description": "Description required.",
+    "website": null,
+    "phone": "07931 866943",
+    "email": null,
+    "address": "78 High Rd Leyton, Leyton, London E15 2BP",
+    "country": "United Kingdom",
+    "social": {
+      "twitter": "https://twitter.com/inkpot2da_grave"
+    },
+    "type": "store"
   }
 ]

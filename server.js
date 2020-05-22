@@ -14,7 +14,7 @@ dotenv.config({ path: "./config/config.env" });
 connectDB();
 
 // Router files
-const centres = require("./routes/centres");
+const organisations = require("./routes/organisations");
 const classes = require("./routes/classes");
 const auth = require("./routes/auth");
 
@@ -38,7 +38,7 @@ app.use(fileUpload());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Mount routers
-app.use("/api/v1/centres", centres);
+app.use("/api/v1/organisations", organisations);
 app.use("/api/v1/classes", classes);
 app.use("/api/v1/auth", auth);
 
