@@ -1,6 +1,6 @@
 # Salafi Directory API
 
-Backend API for Salafi Directory application, which is a Salafi source only, directory website. Intended to provide a central point of resource from Salafi marakiz only.
+Backend API for Salafi Directory application, which is a Salafi source only, directory website. Intended to provide a central point of resource from Salafi organisation's only.
 
 - Salafi only resources
 - Scholar's infos
@@ -40,7 +40,6 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
   - Select specific fields in result
   - Limit number of results
   - Filter by fields
-- Search organisation by radius from postcode
   - Use a geocoder to get exact location and coords from a single address field
 - Get single organisation
 - Create new organisation
@@ -48,42 +47,27 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
   - Must have the role "publisher"
   - Only one account per organisation
   - Field validation via Mongoose
-- Upload a photo or logo for organisation
+- Upload a logo for organisation
   - Publisher only
-  - Photo will be uploaded to local filesystem
+  - logo will be uploaded to local filesystem
 - Update organisation
   - Publisher only
   - Validation on update
 - Delete organisation
   - Publisher only
 
-## Markaz Related
-
-### Duwat's
-
-- List all duwat's for marakiz
-- List all duwat's in general
-  - Pagination, filtering, etc
-- Get single duwat
-- Create new duwat
-  - Authenticated users only
-  - Must have the role "publisher" or "admin"
-  - Only the owner or an admin can create duwat's for a markaz
-- Update duwat's
-  - Publisher or admin
-- Delete class
-  - Publisher or admin
+## Centre Related
 
 ### Classes
 
-- List all classes for marakaz
-- List all classes in general
+- List all classes
+- List all classes for centre
   - Pagination, filtering, times, timezones etc
 - Get single class
 - Create new class
   - Authenticated users only
   - Must have the role "publisher" or "admin"
-  - Only the owner or an admin can create classes for a markaz
+  - Only the owner or an admin can create classes
 - Update classes
   - Publisher or admin
 - Delete class
@@ -91,14 +75,14 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ### Lectures
 
-- List all lectures for a marakaz
-- List all lectures in general
+- List all lectures
+- List all lectures for centre
   - Pagination, filtering, times, timezones etc
 - Get single lecture
 - Create new lecture
   - Authenticated users only
   - Must have the role "publisher" or "admin"
-  - Only the owner or an admin can create lectures for a markaz
+  - Only the owner or an admin can create lectures
 - Update lectures
   - Publisher or admin
 - Delete lecture
@@ -106,12 +90,12 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ### Users & Authentication
 
-- Authentication will be ton using JWT/cookies
+- Authentication using JSON Web Token or cookies
   - JWT and cookie should expire in 30 days
 - User registration
   - Register as a "admin" or "publisher"
   - Once registered, a token will be sent along with a cookie (token = xxx)
-  - Passwords must be hashed
+  - Passwords will be hashed
 - User login
   - User can login with email and password
   - Plain text password will compare with stored hashed password
@@ -125,12 +109,9 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
   - A hashed token will be emailed to the users registered email address
   - A put request can be made to the generated url to reset password
   - The token will expire after 10 minutes
-- Update user info
+- Update admin or publisher user info
   - Authenticated user only
   - Separate route to update password
-- User CRUD
-  - Admin only
-- Users can only be made admin by updating the database field manually
 
 ## Security
 
