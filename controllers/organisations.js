@@ -20,7 +20,7 @@ exports.getOrganisation = asyncHandler(async (req, res, next) => {
       new ErrorResponse(`Resource not found with the ID: ${req.params.id}`, 400)
     );
   }
-  res.status(200).json({ success: true, data: centre });
+  res.status(200).json({ success: true, data: organisation });
 });
 
 // @desc    Create new organisation
