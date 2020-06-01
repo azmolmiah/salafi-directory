@@ -6,7 +6,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 - Scholar's infos
 - Student's of knowledge infos
 - Classes or conference platform/time's/locations
-- Markaz infos
+- Centre infos
 - Store infos
 - Hajj/Ummrah organisations infos
 - Charity organisations infos
@@ -14,7 +14,9 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ## Intended usage of API externally
 
-> If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website. salafidirectory.com
+> Salafi organisations and developer's will be able to access by requesting their ip addresses to be added.
+
+- If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website.
 
 - Publisher: Make account for one organisation each, create, read, update and delete the following...
 

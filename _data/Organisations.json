@@ -36,8 +36,7 @@
     },
     "broadcast": {
       "mixlr": "https://mixlr.com/alhudabolton/",
-      "soundcloud": "https://soundcloud.com/alhudabolton",
-      "periscope": null
+      "soundcloud": "https://soundcloud.com/alhudabolton"
     },
     "type": "centre"
   },
@@ -124,7 +123,7 @@
     "name": "Masjid al Furqan",
     "description": "A Masjid located in the heart of Grangetown, calling to Tawheed using strictly nothing but the Qur'an & Sunnah according to the salaf",
     "website": "https://masjidfurqan.co.uk/",
-    "phone": "01782 823 777",
+    "phone": "07824 193307",
     "email": null,
     "address": "105 Roundwell Street, Tunstall, Stoke on Trent, Staffordshire, ST6 5AW",
     "country": "United Kingdom",
@@ -132,6 +131,21 @@
       "twitter": "https://twitter.com/IslamStoke",
       "facebook": "https://facebook.com/islamstoke/",
       "telegram": "https://t.me/s/masjidfurqan"
+    },
+    "broadcast": {},
+    "type": "centre"
+  },
+  {
+    "name": "Masjid Abi Hurairah",
+    "description": "A Masjid located in the heart of Grangetown, calling to Tawheed using strictly nothing but the Qur'an & Sunnah according to the salaf",
+    "website": "http://masjidabihurairah.com/",
+    "phone": "01782 256124",
+    "email": null,
+    "address": "North Rd, Stoke-on-Trent ST6 2BP",
+    "country": "United Kingdom",
+    "social": {
+      "twitter": "https://twitter.com/masjidhurairah",
+      "facebook": "https://www.facebook.com/masjidabihurairah/"
     },
     "broadcast": {},
     "type": "centre"
