@@ -14,7 +14,7 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 
 ## Intended usage of API externally
 
-> Salafi organisations and developer's will be able to access by requesting their ip addresses to be added.
+> Salafi organisations and developer's will be able to access API by requesting their ip addresses to be added.
 
 - If this API is to be used on a external website, you will need permission for access to API end point's. You will only be able to request information, which is publicly available on our website.
 
