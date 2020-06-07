@@ -10,7 +10,6 @@ Backend API for Salafi Directory application, which is a Salafi source only, dir
 - Store infos
 - Hajj/Ummrah organisations infos
 - Charity organisations infos
-- Browser notifcation's
 
 ## Intended usage of API externally
 
